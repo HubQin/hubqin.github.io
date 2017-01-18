@@ -175,9 +175,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###Tutorial:<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000</a></p>
-<p>##安装Git</p>
-<ul>
+        <h3 id="From-Tutorial-http-www-liaoxuefeng-com-wiki-0013739516305929606dd18361248578c67b8067c8c017b000"><a href="#From-Tutorial-http-www-liaoxuefeng-com-wiki-0013739516305929606dd18361248578c67b8067c8c017b000" class="headerlink" title="From Tutorial:http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000"></a>From Tutorial:<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000</a></h3><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><ul>
 <li><p>Centos系统：<code>yum install git-core</code></p>
 </li>
 <li><p>安装后配置:<br>  <code>git config --global user.name &quot;Your Name&quot;</code><br><code>git config --global user.email &quot;email@example.com&quot;</code></p>
@@ -189,8 +187,7 @@
 <li>初始化版本库：<code>git init</code>（在版本库下生成.git目录，用来追踪管理版本库</li>
 <li>添加文件到版本库：<code>git add &lt;filename&gt;</code> //添加<br><code>git commit -m &quot;说明的文字&quot;</code>//提交</li>
 </ul>
-<h2 id="时光机穿梭"><a href="#时光机穿梭" class="headerlink" title="时光机穿梭"></a>时光机穿梭</h2><p>###版本回退</p>
-<ul>
+<h2 id="时光机穿梭"><a href="#时光机穿梭" class="headerlink" title="时光机穿梭"></a>时光机穿梭</h2><h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><ul>
 <li><p><code>git status</code>, <code>git diff</code></p>
 </li>
 <li><p><code>git log</code> (可以加上<code>--pretty=oneline</code>参数）</p>
@@ -206,8 +203,7 @@
 <li><code>git add</code> 添加到暂存区（stage)  </li>
 <li><code>git commit</code>提交到HEAD，成为当前版本</li>
 </ul>
-<p>###管理修改</p>
-<ul>
+<h3 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h3><ul>
 <li><code>git diff HEAD -- readme.txt</code>命令可以查看工作区和版本库里面最新版本的区别</li>
 </ul>
 <h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><ul>
@@ -224,9 +220,7 @@
 <li><code>git commit -m &quot;remove test.txt&quot;</code></li>
 <li>撤销:<code>git checkout -- test.txt</code></li>
 </ol>
-<p>##远程仓库</p>
-<p>###创建SSH key</p>
-<ul>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><h3 id="创建SSH-key"><a href="#创建SSH-key" class="headerlink" title="创建SSH key"></a>创建SSH key</h3><ul>
 <li><code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code></li>
 </ul>
 <ul>
@@ -237,8 +231,7 @@
 <li><p>点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容</p>
 </li>
 </ul>
-<p>###添加远程库</p>
-<ul>
+<h3 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h3><ul>
 <li><p><code>git remote add origin xxx.git</code></p>
 </li>
 <li><p><code>git push -u origin master</code>(-u 关联）</p>
@@ -246,16 +239,13 @@
 <li><p><code>git push origin master</code></p>
 </li>
 </ul>
-<p>###从远程库克隆</p>
-<ul>
+<h3 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h3><ul>
 <li><p><code>git clone git@github.com:michaelliao/gitskills.git</code></p>
 </li>
 <li><p>还可以用<code>https://github.com/michaelliao/gitskills.git</code>这样的地址</p>
 </li>
 </ul>
-<p>##分支管理</p>
-<p>###创建与合并分支</p>
-<ul>
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h3 id="创建与合并分支"><a href="#创建与合并分支" class="headerlink" title="创建与合并分支"></a>创建与合并分支</h3><ul>
 <li><p>查看分支：<code>git branch</code></p>
 </li>
 <li><p>创建分支：<code>git branch &lt;name&gt;</code></p>
@@ -269,8 +259,7 @@
 <li><p>删除分支：<code>git branch -d &lt;name&gt;</code></p>
 </li>
 </ul>
-<p>###解决冲突</p>
-<ul>
+<h3 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h3><ul>
 <li><p>查看、修改文件内容:Git用&lt;&lt;&lt;&lt;&lt;&lt;&lt;，=======，&gt;&gt;&gt;&gt;&gt;&gt;&gt;标记出不同分支的内容</p>
 </li>
 <li><p><code>git log --graph --pretty=oneline --abbrev-commit</code>（查看分支合并情况）</p>
@@ -298,8 +287,7 @@
 <li><p>建立本地分支和远程分支的关联，使用*git branch –set-upstream branch-name origin/branch-name`</p>
 </li>
 </ul>
-<h2 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h2><p>###创建标签</p>
-<ul>
+<h2 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h2><h3 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h3><ul>
 <li><p>命令<code>git tag &lt;name&gt;</code>用于新建一个标签，默认为<code>HEAD</code>，也可以指定一个commit id；</p>
 </li>
 <li><p><code>git tag -a &lt;tagname&gt; -m &quot;blablabla...&quot;</code>可以指定标签信息；</p>
@@ -309,8 +297,7 @@
 <li><p>命令<code>git tag</code>可以查看所有标签。</p>
 </li>
 </ul>
-<p>###操作标签</p>
-<ul>
+<h3 id="操作标签"><a href="#操作标签" class="headerlink" title="操作标签"></a>操作标签</h3><ul>
 <li><p>命令<code>git push origin &lt;tagname&gt;</code>可以推送一个本地标签；</p>
 </li>
 <li><p>命令<code>git push origin --tags</code>可以推送全部未推送过的本地标签；</p>
@@ -320,8 +307,7 @@
 <li><p>命令<code>git push origin :refs/tags/&lt;tagname&gt;</code>可以删除一个远程标签</p>
 </li>
 </ul>
-<p>##使用GitHub</p>
-<ul>
+<h2 id="使用GitHub"><a href="#使用GitHub" class="headerlink" title="使用GitHub"></a>使用GitHub</h2><ul>
 <li><p>在GitHub上，可以任意Fork开源仓库；</p>
 </li>
 <li><p>自己拥有Fork后的仓库的读写权限；</p>
@@ -329,8 +315,7 @@
 <li><p>可以推送pull request给官方仓库来贡献代码</p>
 </li>
 </ul>
-<p>##自定义Git</p>
-<ul>
+<h2 id="自定义Git"><a href="#自定义Git" class="headerlink" title="自定义Git"></a>自定义Git</h2><ul>
 <li><p>显示颜色:<code>$ git config --global color.ui true</code></p>
 </li>
 <li><p>忽略特殊文件:忽略某些文件时，需要编写<code>.gitignore</code>；<code>.gitignore</code>文件本身要放到版本库里，并且可以对<code>.gitignore</code>做版本管理</p>
@@ -338,8 +323,7 @@
 <li><p>配置别名:<code>git config --global alias.st status</code></p>
 </li>
 </ul>
-<p>##搭建Git服务器</p>
-
+<h2 id="搭建Git服务器"><a href="#搭建Git服务器" class="headerlink" title="搭建Git服务器"></a>搭建Git服务器</h2>
       
 
       

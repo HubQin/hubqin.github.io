@@ -6,39 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://hubqin.github.io">
-  <title>Git study notes | HubQin</title>
+  <title>Tag: mysql | HubQin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="From Tutorial安装Git
-Centos系统：yum install git-core
-
-安装后配置:  git config --global user.name &amp;quot;Your Name&amp;quot;git config --global user.email &amp;quot;email@example.com&amp;quot;
-
-
-创建版本库（repository）
-创建空目录：mkdi">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Git study notes">
-<meta property="og:url" content="http://hubqin.github.io/2017/01/19/gitlearn/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="HubQin">
+<meta property="og:url" content="http://hubqin.github.io/tags/mysql/index.html">
 <meta property="og:site_name" content="HubQin">
-<meta property="og:description" content="From Tutorial安装Git
-Centos系统：yum install git-core
-
-安装后配置:  git config --global user.name &amp;quot;Your Name&amp;quot;git config --global user.email &amp;quot;email@example.com&amp;quot;
-
-
-创建版本库（repository）
-创建空目录：mkdi">
-<meta property="og:updated_time" content="2017-02-14T22:08:14.884Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git study notes">
-<meta name="twitter:description" content="From Tutorial安装Git
-Centos系统：yum install git-core
-
-安装后配置:  git config --global user.name &amp;quot;Your Name&amp;quot;git config --global user.email &amp;quot;email@example.com&amp;quot;
-
-
-创建版本库（repository）
-创建空目录：mkdi">
+<meta name="twitter:title" content="HubQin">
   
     <link rel="alternative" href="/atom.xml" title="HubQin" type="application/atom+xml">
   
@@ -172,299 +147,60 @@ Centos系统：yum install git-core
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-gitlearn" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Git study notes
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/02/21/mysql-study-notes/" class="archive-article-date">
+  	<time datetime="2017-02-21T13:07:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-21</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/02/21/mysql-study-notes/">mysql study notes</a>
     </h1>
   
 
-        
-        <a href="/2017/01/19/gitlearn/" class="archive-article-date">
-  	<time datetime="2017-01-18T23:27:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="From-Tutorial"><a href="#From-Tutorial" class="headerlink" title="From Tutorial"></a>From <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">Tutorial</a></h3><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><ul>
-<li><p>Centos系统：<code>yum install git-core</code></p>
-</li>
-<li><p>安装后配置:<br>  <code>git config --global user.name &quot;Your Name&quot;</code><br><code>git config --global user.email &quot;email@example.com&quot;</code></p>
-</li>
-</ul>
-<h2 id="创建版本库（repository）"><a href="#创建版本库（repository）" class="headerlink" title="创建版本库（repository）"></a>创建版本库（repository）</h2><ul>
-<li>创建空目录：<code>mkdir dirname</code></li>
-<li>转到该目录:  <code>cd dirname</code></li>
-<li>初始化版本库：<code>git init</code>（在版本库下生成.git目录，用来追踪管理版本库</li>
-<li>添加文件到版本库：<code>git add &lt;filename&gt;</code> //添加<br><code>git commit -m &quot;说明的文字&quot;</code>//提交</li>
-</ul>
-<h2 id="时光机穿梭"><a href="#时光机穿梭" class="headerlink" title="时光机穿梭"></a>时光机穿梭</h2><h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><ul>
-<li><p><code>git status</code>, <code>git diff</code></p>
-</li>
-<li><p><code>git log</code> (可以加上<code>--pretty=oneline</code>参数）</p>
-</li>
-<li><p><code>git reset --hard commit_id</code>（退回相应版本）</p>
-</li>
-<li><p><code>git reflog</code>查看命令历史</p>
-</li>
-<li><p><code>HEAD</code>指向的版本就是当前版本</p>
-</li>
-</ul>
-<h3 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h3><ul>
-<li><code>git add</code> 添加到暂存区（stage)  </li>
-<li><code>git commit</code>提交到HEAD，成为当前版本</li>
-</ul>
-<h3 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h3><ul>
-<li><code>git diff HEAD -- readme.txt</code>命令可以查看工作区和版本库里面最新版本的区别</li>
-</ul>
-<h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><ul>
-<li><p>丢弃工作区的修改：<code>git checkout -- file</code></p>
-</li>
-<li><p>已经add到暂存区：1. <code>git reset HEAD file</code> 2.执行上面的步骤</p>
-</li>
-<li><p>已经提交：使用版本退回</p>
-</li>
-</ul>
-<h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><ol>
-<li><code>rm test.txt</code>  </li>
-<li><code>git rm test.txt</code></li>
-<li><code>git commit -m &quot;remove test.txt&quot;</code></li>
-<li>撤销:<code>git checkout -- test.txt</code></li>
-</ol>
-<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><h3 id="创建SSH-key"><a href="#创建SSH-key" class="headerlink" title="创建SSH key"></a>创建SSH key</h3><ul>
-<li><code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code></li>
-</ul>
-<ul>
-<li><p><code>.ssh</code>目录，里面有<code>id_rsa</code>和<code>id_rsa.pub</code>两个文件，这两个就是<code>SSH Key</code>的秘钥对，<code>id_rsa</code>是私钥，不能泄露出去，<code>id_rsa.pub</code>是公钥，可以放心地告诉任何人</p>
-</li>
-<li><p>登陆GitHub，打开“Account settings”，“SSH Keys”页面</p>
-</li>
-<li><p>点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容</p>
-</li>
-</ul>
-<h3 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h3><ul>
-<li><p><code>git remote add origin xxx.git</code></p>
-</li>
-<li><p><code>git push -u origin master</code>(-u 关联）</p>
-</li>
-<li><p><code>git push origin master</code></p>
-</li>
-</ul>
-<h3 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h3><ul>
-<li><p><code>git clone git@github.com:michaelliao/gitskills.git</code></p>
-</li>
-<li><p>还可以用<code>https://github.com/michaelliao/gitskills.git</code>这样的地址</p>
-</li>
-</ul>
-<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h3 id="创建与合并分支"><a href="#创建与合并分支" class="headerlink" title="创建与合并分支"></a>创建与合并分支</h3><ul>
-<li><p>查看分支：<code>git branch</code></p>
-</li>
-<li><p>创建分支：<code>git branch &lt;name&gt;</code></p>
-</li>
-<li><p>切换分支：<code>git checkout &lt;name&gt;</code></p>
-</li>
-<li><p>创建+切换分支：<code>git checkout -b &lt;name&gt;</code></p>
-</li>
-<li><p>合并某分支到当前分支：<code>git merge &lt;name&gt;</code></p>
-</li>
-<li><p>删除分支：<code>git branch -d &lt;name&gt;</code></p>
-</li>
-</ul>
-<h3 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h3><ul>
-<li><p>查看、修改文件内容:Git用&lt;&lt;&lt;&lt;&lt;&lt;&lt;，=======，&gt;&gt;&gt;&gt;&gt;&gt;&gt;标记出不同分支的内容</p>
-</li>
-<li><p><code>git log --graph --pretty=oneline --abbrev-commit</code>（查看分支合并情况）</p>
-</li>
-</ul>
-<h3 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h3><ul>
-<li><p>合并分支时Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息</p>
-</li>
-<li><p><code>git merge --no-ff -m &quot;merge with no-ff&quot; dev</code></p>
-</li>
-<li><p><code>master</code>用来发布版本，<code>dev</code>用来干活</p>
-</li>
-</ul>
-<h3 id="Bug分支"><a href="#Bug分支" class="headerlink" title="Bug分支"></a>Bug分支</h3><ul>
-<li><code>git stash</code>一下，然后去修复bug，修复后，再<code>git stash pop</code>，回到工作现场</li>
-</ul>
-<h3 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h3><ul>
-<li>要丢弃一个没有被合并过的分支，可以通过<code>git branch -D &lt;name&gt;</code>强行删除</li>
-</ul>
-<h3 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h3><ul>
-<li><p>查看远程库信息：<code>git remote -v</code></p>
-</li>
-<li><p>在本地创建和远程分支对应的分支：<code>git checkout -b branch-name origin/branch-name</code>（关联了分支）</p>
-</li>
-<li><p>建立本地分支和远程分支的关联，使用<code>git branch --set-upstream branch-name origin/branch-name</code></p>
-</li>
-</ul>
-<h2 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h2><h3 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h3><ul>
-<li><p>命令<code>git tag &lt;name&gt;</code>用于新建一个标签，默认为<code>HEAD</code>，也可以指定一个commit id；</p>
-</li>
-<li><p><code>git tag -a &lt;tagname&gt; -m &quot;blablabla...&quot;</code>可以指定标签信息；</p>
-</li>
-<li><p><code>git tag -s &lt;tagname&gt; -m &quot;blablabla...&quot;</code>可以用PGP签名标签；</p>
-</li>
-<li><p>命令<code>git tag</code>可以查看所有标签。</p>
-</li>
-</ul>
-<h3 id="操作标签"><a href="#操作标签" class="headerlink" title="操作标签"></a>操作标签</h3><ul>
-<li><p>命令<code>git push origin &lt;tagname&gt;</code>可以推送一个本地标签；</p>
-</li>
-<li><p>命令<code>git push origin --tags</code>可以推送全部未推送过的本地标签；</p>
-</li>
-<li><p>命令<code>git tag -d &lt;tagname&gt;</code>可以删除一个本地标签；</p>
-</li>
-<li><p>命令<code>git push origin :refs/tags/&lt;tagname&gt;</code>可以删除一个远程标签</p>
-</li>
-</ul>
-<h2 id="使用GitHub"><a href="#使用GitHub" class="headerlink" title="使用GitHub"></a>使用GitHub</h2><ul>
-<li><p>在GitHub上，可以任意Fork开源仓库；</p>
-</li>
-<li><p>自己拥有Fork后的仓库的读写权限；</p>
-</li>
-<li><p>可以推送pull request给官方仓库来贡献代码</p>
-</li>
-</ul>
-<h2 id="自定义Git"><a href="#自定义Git" class="headerlink" title="自定义Git"></a>自定义Git</h2><ul>
-<li><p>显示颜色:<code>$ git config --global color.ui true</code></p>
-</li>
-<li><p>忽略特殊文件:忽略某些文件时，需要编写<code>.gitignore</code>；<code>.gitignore</code>文件本身要放到版本库里，并且可以对<code>.gitignore</code>做版本管理</p>
-</li>
-<li><p>配置别名:<code>git config --global alias.st status</code></p>
-</li>
-</ul>
-<h2 id="搭建Git服务器"><a href="#搭建Git服务器" class="headerlink" title="搭建Git服务器"></a>搭建Git服务器</h2>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://hubqin.github.io/2017/01/19/gitlearn/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2017/02/21/mysql-study-notes/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          mysql study notes
-        
-      </div>
-    </a>
   
   
-    <a href="/2017/01/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-
-
-
-
-  <section id="comments">
-    <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-gitlearn" data-title="Git study notes" data-url="http://hubqin.github.io/2017/01/19/gitlearn/"></div>
-    <!-- 多说评论框 end -->
-    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:'hubqin'};
-      (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-      })();
-      </script>
-    <!-- 多说公共JS代码 end -->
-  </section>
+    </div></section>
   
 
+    
 
 
           </div>
@@ -487,9 +223,9 @@ Centos系统：yum install git-core
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

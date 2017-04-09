@@ -6,14 +6,36 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://hubqin.github.io">
-  <title>Archives: 2017/4 | HubQin</title>
+  <title>Mysql study notes | HubQin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="HubQin">
-<meta property="og:url" content="http://hubqin.github.io/archives/2017/04/index.html">
+  <meta name="description" content="BasicInstall in Linux（centos7）Under root account，run yum insatll mariadb-server   
+
+
+mariadb 是mysql的一个分支，新版本的Linux以mariadb代替mysql，语法基本一样。   
+
+
+Database：a collection of data stored in some organized fa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mysql study notes">
+<meta property="og:url" content="http://hubqin.github.io/2017/02/21/mysql-study-notes/index.html">
 <meta property="og:site_name" content="HubQin">
+<meta property="og:description" content="BasicInstall in Linux（centos7）Under root account，run yum insatll mariadb-server   
+
+
+mariadb 是mysql的一个分支，新版本的Linux以mariadb代替mysql，语法基本一样。   
+
+
+Database：a collection of data stored in some organized fa">
+<meta property="og:updated_time" content="2017-04-09T01:34:37.838Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HubQin">
+<meta name="twitter:title" content="Mysql study notes">
+<meta name="twitter:description" content="BasicInstall in Linux（centos7）Under root account，run yum insatll mariadb-server   
+
+
+mariadb 是mysql的一个分支，新版本的Linux以mariadb代替mysql，语法基本一样。   
+
+
+Database：a collection of data stored in some organized fa">
   
     <link rel="alternative" href="/atom.xml" title="HubQin" type="application/atom+xml">
   
@@ -147,43 +169,181 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-mysql-study-notes" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Mysql study notes
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/09/mysql-study-notes/" class="archive-article-date">
-  	<time datetime="2017-04-09T01:21:51.288Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-09</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+        
+        <a href="/2017/02/21/mysql-study-notes/" class="archive-article-date">
+  	<time datetime="2017-02-21T13:07:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><h3 id="Install-in-Linux（centos7）"><a href="#Install-in-Linux（centos7）" class="headerlink" title="Install in Linux（centos7）"></a>Install in Linux（centos7）</h3><p>Under root account，run <code>yum insatll mariadb-server</code>   </p>
+<blockquote>
+<ul>
+<li>mariadb 是mysql的一个分支，新版本的Linux以mariadb代替mysql，语法基本一样。   </li>
+</ul>
+</blockquote>
+<h3 id="Database：a-collection-of-data-stored-in-some-organized-fashion"><a href="#Database：a-collection-of-data-stored-in-some-organized-fashion" class="headerlink" title="Database：a collection of data stored in some organized fashion"></a>Database：a collection of data stored in some organized fashion</h3><blockquote>
+<ul>
+<li>数据库软件是DBMS，里面存储的文件是database.    </li>
+</ul>
+</blockquote>
+<h3 id="Table-a-sturctured-list-of-data-of-a-specific-type"><a href="#Table-a-sturctured-list-of-data-of-a-specific-type" class="headerlink" title="Table : a sturctured list of data of a specific type"></a>Table : a sturctured list of data of a specific type</h3><h3 id="primary-keys-主键，唯一、不允许修改或更新、不能重用。"><a href="#primary-keys-主键，唯一、不允许修改或更新、不能重用。" class="headerlink" title="primary keys : 主键，唯一、不允许修改或更新、不能重用。"></a>primary keys : 主键，唯一、不允许修改或更新、不能重用。</h3><h3 id="SQL：structured-query-language"><a href="#SQL：structured-query-language" class="headerlink" title="SQL：structured query language."></a>SQL：structured query language.</h3><h3 id="Comment-：-，-，"><a href="#Comment-：-，-，" class="headerlink" title="Comment ： --，#，/*   */"></a>Comment ： <code>--，#，/*   */</code></h3><h3 id="Use-commandname-to-query-manpage"><a href="#Use-commandname-to-query-manpage" class="headerlink" title="Use ? commandname to query manpage."></a>Use <code>? commandname</code> to query manpage.</h3><h3 id="Log-in-mysql-h-hostname-u-username-p-Enter-then-input-password"><a href="#Log-in-mysql-h-hostname-u-username-p-Enter-then-input-password" class="headerlink" title="Log in : mysql -h hostname -u username -p + Enter, then input password."></a>Log in : <code>mysql -h hostname -u username -p</code> + Enter, then input password.</h3><h3 id="SQL-statements-are-not-case-sensitive-but-database-and-table-names-can-be"><a href="#SQL-statements-are-not-case-sensitive-but-database-and-table-names-can-be" class="headerlink" title="SQL statements are not case sensitive, but database and table names can be."></a>SQL statements are not case sensitive, but database and table names can be.</h3><h3 id="command-ends-with-a-semicolon"><a href="#command-ends-with-a-semicolon" class="headerlink" title="command ends with a semicolon ;."></a>command ends with a semicolon <code>;</code>.</h3><h3 id="Choose-the-right-database-use-databasename"><a href="#Choose-the-right-database-use-databasename" class="headerlink" title="Choose the right database : use databasename;"></a>Choose the right database : <code>use databasename;</code></h3><h3 id="Create"><a href="#Create" class="headerlink" title="Create"></a>Create</h3><h4 id="create-databases-create-database-databasename"><a href="#create-databases-create-database-databasename" class="headerlink" title="create databases : create database databasename;"></a>create databases : <code>create database databasename;</code></h4><h4 id="create-tables-create-table-tablename-column-name-column-type"><a href="#create-tables-create-table-tablename-column-name-column-type" class="headerlink" title="create tables : create table tablename (column_name column_type);"></a>create tables : <code>create table tablename (column_name column_type);</code></h4><p>Example:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">create table customers</div><div class="line">( customerid int unsigned not null auto_increment primary key,</div><div class="line">name char(50) not null,</div><div class="line">address char(100) not null,</div><div class="line">city char(30) not null</div><div class="line">);</div></pre></td></tr></table></figure></p>
+<h5 id="auto-increment"><a href="#auto-increment" class="headerlink" title="auto_increment :"></a>auto_increment :</h5><p>you can leave that field blank or NULL when inserting rows into the table, MySQL will automatically generate a unique identifier value.The value will be one greater than the maximum value in the column already.You can have only one of these in each table.Columns that specify AUTO_INCREMENT must be indexed.  </p>
+<h3 id="Operations-and-privileges-on-users"><a href="#Operations-and-privileges-on-users" class="headerlink" title="Operations and privileges on users"></a>Operations and privileges on users</h3><h4 id="grant"><a href="#grant" class="headerlink" title="grant"></a>grant</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">GRANT privileges [columns]</div><div class="line">ON item</div><div class="line">TO user_name [IDENTIFIED BY ‘password’]</div><div class="line">[REQUIRE ssl_options]</div><div class="line">[WITH [GRANT OPTION | limit_options] ]</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mysql&gt; grant all</div><div class="line">-&gt; on *</div><div class="line">-&gt; to fred identified by ‘mnb123’</div><div class="line">-&gt; with grant option;</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>grant option,make the specified user has privilege to grant to other user.   <h4 id="revoke"><a href="#revoke" class="headerlink" title="revoke"></a>revoke</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mysql&gt; revoke all privileges, grant option</div><div class="line">-&gt; from fred;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="Show-and-Describe"><a href="#Show-and-Describe" class="headerlink" title="Show and Describe"></a>Show and Describe</h3><h4 id="show-databases-show-tablename-describe-tablename"><a href="#show-databases-show-tablename-describe-tablename" class="headerlink" title="show databases; show tablename; describe tablename;"></a><code>show databases;</code> <code>show tablename;</code> <code>describe tablename;</code></h4><h3 id="Column-data-type"><a href="#Column-data-type" class="headerlink" title="Column data type"></a>Column data type</h3><h4 id="Numeric-Types-：-Integral-Data-Types，Floating-Point-Data-Types"><a href="#Numeric-Types-：-Integral-Data-Types，Floating-Point-Data-Types" class="headerlink" title="Numeric Types ： Integral Data Types，Floating-Point Data Types"></a>Numeric Types ： Integral Data Types，Floating-Point Data Types</h4><h4 id="Date-and-Time-Types-：-Date-and-Time-Data-Types，TIMESTAMP-Display-Types"><a href="#Date-and-Time-Types-：-Date-and-Time-Data-Types，TIMESTAMP-Display-Types" class="headerlink" title="Date and Time Types ： Date and Time Data Types，TIMESTAMP Display Types"></a>Date and Time Types ： Date and Time Data Types，TIMESTAMP Display Types</h4><h4 id="String-Types-：-Regular-String-Types，TEXT-and-BLOB-Types"><a href="#String-Types-：-Regular-String-Types，TEXT-and-BLOB-Types" class="headerlink" title="String Types ： Regular String Types，TEXT and BLOB Types"></a>String Types ： Regular String Types，TEXT and BLOB Types</h4><h3 id="Insert"><a href="#Insert" class="headerlink" title="Insert"></a>Insert</h3><p>Example ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">INSERT [INTO] table [(column1, column2, column3,...)] VALUES</div><div class="line">(value1, value2, value3,...);</div></pre></td></tr></table></figure></p>
+<p>or<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">insert into customers values</div><div class="line">(NULL, &apos;Julie Smith&apos;, &apos;25 Oak Street&apos;, &apos;Airport West&apos;);</div><div class="line">```   </div><div class="line">### Select</div></pre></td></tr></table></figure></p>
+<p>SELECT [options] items<br>[INTO file_details]<br>FROM tables<br>[ WHERE conditions ]<br>[ GROUP BY group_type ]<br>[ HAVING where_definition ] –for group data<br>[ ORDER BY order_type ]<br>[LIMIT limit_criteria ]<br>[PROCEDURE proc_name(arguments)]<br>[lock_options]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#### Useful Comparison Operators for WHERE Clauses   </div><div class="line">Example :</div></pre></td></tr></table></figure></p>
+<p>=,&gt;,&lt;,!=<br>address is not null<br>address is null<br>amount between 0 and 60.00<br>city in (“Carlton”, “Moe”)<br>city not in (“Carlton”, ”Moe”)<br>name like (“Fred %”)<br>name not like (“Fred %”)<br>name regexp<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#### Retrieving Data from Multiple Tables   </div><div class="line">##### Simple Two-Table Joins</div><div class="line">Example ：</div></pre></td></tr></table></figure></p>
+<p>select orders.orderid, orders.amount, orders.date<br>from customers, orders<br>JOIN<br>where customers.name = ‘Julie Smith’<br>and customers.customerid = orders.customerid;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;* Comma between the names of the tables is equivalent to typing INNER JOIN or CROSS</div><div class="line"></div><div class="line">##### Joining More Than Two Tables</div><div class="line">Example ：</div></pre></td></tr></table></figure></p>
+<p>select customers.name<br>from customers, orders, order_items, books<br>where customers.customerid = orders.customerid<br>and orders.orderid = order_items.orderid<br>and order_items.isbn = books.isbn<br>and books.title like ‘%Java%’;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;* A total of join conditions one less than the total number of tables.   </div><div class="line"></div><div class="line">##### Finding Rows That Don’t Match : left join</div><div class="line"></div><div class="line">Example ：</div></pre></td></tr></table></figure></p>
+<p>select customers.customerid, customers.name<br>from customers left join orders<br>/<em> or： on customers.customerid = orders.customerid</em>/<br>using (customerid)<br>where orders.orderid is null;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">##### Using Other Names for Tables: Aliases   </div><div class="line">### Update</div></pre></td></tr></table></figure></p>
+<p>UPDATE [LOW_PRIORITY] [IGNORE] tablename<br>SET column1=expression1,column2=expression2,…<br>[WHERE condition]<br>[ORDER BY order_criteria]<br>[LIMIT number]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">### Alter</div></pre></td></tr></table></figure></p>
+<p>alter table customers<br>modify name char(70) not null;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line">alter table orders</div><div class="line">add tax float(6,2) after amount;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">alter table orders</div><div class="line">drop tax;</div><div class="line">```   </div><div class="line">### Deleting Records from the Database</div></pre></td></tr></table></figure>
+<p>delete from customers<br>where customerid=5;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">### Drop  </div><div class="line">`DROP TABLE table;`</div><div class="line">&gt;* 更新和删除：需非常小心，用上WHERE   </div><div class="line"></div><div class="line">## Advanced   </div><div class="line">### View 视图</div><div class="line">视图是虚拟的表。与包含数据的表不一样，视图只包含使用时动态检索数据的查询。</div><div class="line">`CREATE VIEW viewname`</div><div class="line">`DROP VIEW viewname;`</div><div class="line">### PROCEDURE  存储过程</div><div class="line">&gt;* 一组为了完成特定功能的SQL语句集，经编译后存储在数据库中，用户通过指定存储过程的名字并给定参数（如果该存储过程带有参数）来调用执行它。</div></pre></td></tr></table></figure></p>
+<p>mysql&gt; DELIMITER //<br>mysql&gt; CREATE PROCEDURE proc1(OUT s int)<br>    -&gt; BEGIN<br>    -&gt; SELECT COUNT(*) INTO s FROM user;<br>    -&gt; END<br>    -&gt; //<br>mysql&gt; DELIMITER ;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&gt;* 注：delimiter //</div><div class="line">一般情况下MYSQL以；结尾表示确认输入并执行语句，但在存储过程中；不是表示结束，因此可以用该命令将；号改为//表示确认输入并执行。</div><div class="line">（1）这里需要注意的是DELIMITER//和DELIMITER;两句，DELIMITER是分割符的意思，因为MySQL默认以&quot;;&quot;为分隔符，如果我们没有声明分割符，那么编译器会把存储过程当成SQL语句进行处理，则存储过程的编译过程会报错，所以要事先用DELIMITER关键字申明当前段分隔符，这样MySQL才会将&quot;;&quot;当做存储过程中的代码，不会执行这些代码，用完了之后要把分隔符还原。</div><div class="line">（2）存储过程根据需要可能会有输入、输出、输入输出参数，这里有一个输出参数s，类型是int型，如果有多个参数用&quot;,&quot;分割开。</div><div class="line">（3）过程体的开始与结束使用BEGIN与END进行标识。</div><div class="line">参数</div><div class="line">MySQL存储过程的参数用在存储过程的定义，共有三种参数类型,IN,OUT,INOUT,形式如：</div><div class="line">`CREATE PROCEDURE([[IN |OUT |INOUT ] 参数名 数据类形...])`</div><div class="line">IN 输入参数:表示该参数的值必须在调用存储过程时指定，在存储过程中修改该参数的值不能被返回，为默认值;</div><div class="line">OUT 输出参数:该值可在存储过程内部被改变，并可返回;</div><div class="line">INOUT 输入输出参数:调用时指定，并且可被改变和返回;   </div><div class="line"></div><div class="line">### Transaction 事务处理</div><div class="line">&gt;* 事务处理是一种机制，用来管理必须成批执行的SQL操作，保证数据库不包含不完整的操作结果。利用事务处理，可以保证一组操作不会中途停止，它们要么完全执行,要么完全不执行（除非明确指示）。如果没有错误发生，整组语句提交给（写到）数据库表；如果发生错误，则进行回退(撤销）将数据库恢复到某个已知且安全的状态。</div><div class="line">如果打算使用MySQL事务编程，那么就需要一种特殊的方式创建表。有很多支持事务但最流行的是InnoDB表类型。</div><div class="line">MySQL默认操作模式就是autocommit自动提交模式。这就表示除非显式地开始一个事务，否则每个查询都被当做一个单独的事务自动执行。我们可以通过设置autocommit的值改变是否是自动提交autocommit模式。   </div><div class="line"></div><div class="line">Example ： </div><div class="line">&gt;* 需求说明：</div><div class="line">案例背景:银行的转账过程中，发生意外是在所难免。为了避免意外而造成不必要的损失，使用事务处理的方式进行处理：</div><div class="line">A账户现有余额1000元，向余额为200的B账户进行转账500元。可能由于某原因： </div><div class="line">A账户在扣除转账金额时发生错误，使用事务回滚来返回到初始状态</div><div class="line">A账户成功扣除转账金额后，B账户添加转账金额发生错误，使用事务回滚到初始状态</div><div class="line">提示：先建数据表account，字段包括姓名(username)、余额（money），再分别利用事务处理以上两种情况。</div><div class="line"></div><div class="line">##### 创建账户表</div></pre></td></tr></table></figure></p>
+<p>CREATE TABLE IF NOT EXISTS account(<br>  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,<br>  username VARCHAR(32) NOT NULL,<br>  money DECIMAL(9,2)<br>) ENGINE=INNODB;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">##### 插入用户数据</div></pre></td></tr></table></figure></p>
+<p>INSERT INTO account(username,money)VALUES(‘A’,1000.00);<br>INSERT INTO account(username,money)VALUES(‘B’,200.00);<br>```</p>
+<h5 id="事务处理"><a href="#事务处理" class="headerlink" title="事务处理"></a>事务处理</h5><p>  A账户汇款失败</p>
+<p><code>SELECT * FROM account;</code><br>第一步 关闭事务自动提交模式<br><code>SET autocommit=0;</code><br>第二步 开始事务<br><code>START TRANSACTION;</code><br>第三步 发现汇款失败，将事务回滚ROLLBACK || 汇款成功将事件commit<br>假设语法错误<br><code>UPDATE account SET money=money-500 WHERE username=&#39;A&#39;;</code><br><code>SELECT * FROM account;</code><br><code>UPDATE account SET money=money+200 WHERE username=&#39;B&#39;;</code><br><code>ROLLBACK;</code><br>第四步 还原Mysql数据库的的自动提交<br><code>SET autocommit=1;</code><br><code>SELECT * FROM account;</code></p>
+<p>B接收汇款失败<br><code>SELECT *FROM account；</code><br><code>SET autocommit =0;</code><br><code>START TRANSACTION;</code><br><code>UPDATE account SET money=money-500 WHERE username=&#39;A&#39;;</code><br><code>SELECT * FROM account ;</code><br>假设语法错误<br><code>UPDATE account SET money=money+200 WHERE username =&#39;B&#39;;</code><br><code>ROLLBACK;</code><br><code>SET autocommit =1;</code><br><code>SELECT * FROM account;</code></p>
+<h5 id="清除数据"><a href="#清除数据" class="headerlink" title="清除数据"></a>清除数据</h5><p><code>TRUNCATE account;</code></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://hubqin.github.io/2017/02/21/mysql-study-notes/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/01/19/gitlearn/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git study notes</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-mysql-study-notes" data-title="Mysql study notes" data-url="http://hubqin.github.io/2017/02/21/mysql-study-notes/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'hubqin'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
   
 
-    
 
 
           </div>
@@ -206,8 +366,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
@@ -273,6 +433,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
             
             <div class="clearfix"></div>

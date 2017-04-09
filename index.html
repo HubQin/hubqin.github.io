@@ -152,55 +152,34 @@
     <article id="post-mysql-study-notes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/21/mysql-study-notes/">Mysql study notes</a>
-    </h1>
-  
-
-        
-        <a href="/2017/02/21/mysql-study-notes/" class="archive-article-date">
-  	<time datetime="2017-02-21T13:07:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-21</time>
-</a>
-        
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h3><p>Install in Linux（centos7）<br>Under root account，run <code>yum insatll mariadb-server</code>   </p>
+        <hr>
+<p>title: Mysql study notes<br>date: 2017-02-21 21:07:35<br>tags: mysql</p>
+<h2 id="categories"><a href="#categories" class="headerlink" title="categories:"></a>categories:</h2><h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><h3 id="Install-in-Linux（centos7）"><a href="#Install-in-Linux（centos7）" class="headerlink" title="Install in Linux（centos7）"></a>Install in Linux（centos7）</h3><p>Under root account，run <code>yum insatll mariadb-server</code>   </p>
 <blockquote>
 <ul>
 <li>mariadb 是mysql的一个分支，新版本的Linux以mariadb代替mysql，语法基本一样。   </li>
 </ul>
 </blockquote>
-<p> Database：a collection of data stored in some organized fashion</p>
-<blockquote>
+<h3 id="Database：a-collection-of-data-stored-in-some-organized-fashion"><a href="#Database：a-collection-of-data-stored-in-some-organized-fashion" class="headerlink" title="Database：a collection of data stored in some organized fashion"></a>Database：a collection of data stored in some organized fashion</h3><blockquote>
 <ul>
 <li>数据库软件是DBMS，里面存储的文件是database.    </li>
 </ul>
 </blockquote>
-<p> <strong>Table</strong> : a sturctured list of data of a specific type<br> <strong>primary keys</strong> : 主键，唯一、不允许修改或更新、不能重用。<br> <strong>SQL</strong>：structured query language.<br> <strong>Comment</strong> ： <code>--，#，/*   */</code><br> Use <code>? commandname</code> to query manpage.<br> Log in : <code>mysql -h hostname -u username -p</code> + Enter, then input password.<br> SQL statements are not case sensitive, but database and table names can be.<br> command ends with a semicolon <code>;</code>.<br> Choose the right database :   <code>use databasename;</code><br>create databases :  <code>create database databasename;</code><br>create tables :  <code>create table tablename (column_name column_type);</code><br>Example:   </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">create table customers</div><div class="line">( customerid int unsigned not null auto_increment primary key,</div><div class="line">name char(50) not null,</div><div class="line">address char(100) not null,</div><div class="line">city char(30) not null</div><div class="line">);</div></pre></td></tr></table></figure>
-<p><strong>auto_increment</strong> :<br>you can leave that field blank or NULL when inserting rows into the table, MySQL will automatically generate a unique identifier value.The value will be one greater than the maximum value in the column already.You can have only one of these in each table.Columns that specify AUTO_INCREMENT must be indexed.<br> Operations and privileges on users   </p>
-<p> <strong>grant</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">GRANT privileges [columns]</div><div class="line">ON item</div><div class="line">TO user_name [IDENTIFIED BY ‘password’]</div><div class="line">[REQUIRE ssl_options]</div><div class="line">[WITH [GRANT OPTION | limit_options] ]</div></pre></td></tr></table></figure></p>
+<h3 id="Table-a-sturctured-list-of-data-of-a-specific-type"><a href="#Table-a-sturctured-list-of-data-of-a-specific-type" class="headerlink" title="Table : a sturctured list of data of a specific type"></a>Table : a sturctured list of data of a specific type</h3><h3 id="primary-keys-主键，唯一、不允许修改或更新、不能重用。"><a href="#primary-keys-主键，唯一、不允许修改或更新、不能重用。" class="headerlink" title="primary keys : 主键，唯一、不允许修改或更新、不能重用。"></a>primary keys : 主键，唯一、不允许修改或更新、不能重用。</h3><h3 id="SQL：structured-query-language"><a href="#SQL：structured-query-language" class="headerlink" title="SQL：structured query language."></a>SQL：structured query language.</h3><h3 id="Comment-：-，-，"><a href="#Comment-：-，-，" class="headerlink" title="Comment ： --，#，/*   */"></a>Comment ： <code>--，#，/*   */</code></h3><h3 id="Use-commandname-to-query-manpage"><a href="#Use-commandname-to-query-manpage" class="headerlink" title="Use ? commandname to query manpage."></a>Use <code>? commandname</code> to query manpage.</h3><h3 id="Log-in-mysql-h-hostname-u-username-p-Enter-then-input-password"><a href="#Log-in-mysql-h-hostname-u-username-p-Enter-then-input-password" class="headerlink" title="Log in : mysql -h hostname -u username -p + Enter, then input password."></a>Log in : <code>mysql -h hostname -u username -p</code> + Enter, then input password.</h3><h3 id="SQL-statements-are-not-case-sensitive-but-database-and-table-names-can-be"><a href="#SQL-statements-are-not-case-sensitive-but-database-and-table-names-can-be" class="headerlink" title="SQL statements are not case sensitive, but database and table names can be."></a>SQL statements are not case sensitive, but database and table names can be.</h3><h3 id="command-ends-with-a-semicolon"><a href="#command-ends-with-a-semicolon" class="headerlink" title="command ends with a semicolon ;."></a>command ends with a semicolon <code>;</code>.</h3><h3 id="Choose-the-right-database-use-databasename"><a href="#Choose-the-right-database-use-databasename" class="headerlink" title="Choose the right database : use databasename;"></a>Choose the right database : <code>use databasename;</code></h3><h3 id="Create"><a href="#Create" class="headerlink" title="Create"></a>Create</h3><h4 id="create-databases-create-database-databasename"><a href="#create-databases-create-database-databasename" class="headerlink" title="create databases : create database databasename;"></a>create databases : <code>create database databasename;</code></h4><h4 id="create-tables-create-table-tablename-column-name-column-type"><a href="#create-tables-create-table-tablename-column-name-column-type" class="headerlink" title="create tables : create table tablename (column_name column_type);"></a>create tables : <code>create table tablename (column_name column_type);</code></h4><p>Example:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">create table customers</div><div class="line">( customerid int unsigned not null auto_increment primary key,</div><div class="line">name char(50) not null,</div><div class="line">address char(100) not null,</div><div class="line">city char(30) not null</div><div class="line">);</div></pre></td></tr></table></figure></p>
+<h5 id="auto-increment"><a href="#auto-increment" class="headerlink" title="auto_increment :"></a>auto_increment :</h5><p>you can leave that field blank or NULL when inserting rows into the table, MySQL will automatically generate a unique identifier value.The value will be one greater than the maximum value in the column already.You can have only one of these in each table.Columns that specify AUTO_INCREMENT must be indexed.  </p>
+<h3 id="Operations-and-privileges-on-users"><a href="#Operations-and-privileges-on-users" class="headerlink" title="Operations and privileges on users"></a>Operations and privileges on users</h3><h4 id="grant"><a href="#grant" class="headerlink" title="grant"></a>grant</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">GRANT privileges [columns]</div><div class="line">ON item</div><div class="line">TO user_name [IDENTIFIED BY ‘password’]</div><div class="line">[REQUIRE ssl_options]</div><div class="line">[WITH [GRANT OPTION | limit_options] ]</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mysql&gt; grant all</div><div class="line">-&gt; on *</div><div class="line">-&gt; to fred identified by ‘mnb123’</div><div class="line">-&gt; with grant option;</div></pre></td></tr></table></figure>
 <blockquote>
 <ul>
-<li>grant option,make the specified user has privilege to grant to other user.   </li>
+<li>grant option,make the specified user has privilege to grant to other user.   <h4 id="revoke"><a href="#revoke" class="headerlink" title="revoke"></a>revoke</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mysql&gt; revoke all privileges, grant option</div><div class="line">-&gt; from fred;</div></pre></td></tr></table></figure>
+</li>
 </ul>
 </blockquote>
-<p> <strong>revoke</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mysql&gt; revoke all privileges, grant option</div><div class="line">-&gt; from fred;</div></pre></td></tr></table></figure>
-<p> <code>show databases;</code> <code>show tablename;</code> <code>describe tablename;</code> </p>
-<p> <strong>Column data type</strong></p>
-<ul>
-<li>Numeric Types ： Integral Data Types，Floating-Point Data Types</li>
-<li>Date and Time Types ： Date and Time Data Types，TIMESTAMP Display Types   </li>
-<li>String Types ： Regular String Types，TEXT and BLOB Types   </li>
-</ul>
-<h3 id="Insert"><a href="#Insert" class="headerlink" title="Insert"></a>Insert</h3><p>Example ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">INSERT [INTO] table [(column1, column2, column3,...)] VALUES</div><div class="line">(value1, value2, value3,...);</div><div class="line"></div><div class="line">insert into customers values</div><div class="line">(NULL, &apos;Julie Smith&apos;, &apos;25 Oak Street&apos;, &apos;Airport West&apos;);</div><div class="line">```      </div><div class="line"></div><div class="line"></div><div class="line">### Select </div><div class="line"></div><div class="line">Usage:</div><div class="line">  </div><div class="line">```   </div><div class="line">SELECT [options] items</div><div class="line">[INTO file_details]</div><div class="line">FROM tables</div><div class="line">[ WHERE conditions ]</div><div class="line">[ GROUP BY group_type ]</div><div class="line">[ HAVING where_definition ] --for group data</div><div class="line">[ ORDER BY order_type ]</div><div class="line">[LIMIT limit_criteria ]</div><div class="line">[PROCEDURE proc_name(arguments)]</div><div class="line">[lock_options]</div><div class="line"></div><div class="line">```      </div><div class="line"></div><div class="line"></div><div class="line">#### Useful Comparison Operators for WHERE Clauses   </div><div class="line">Example :</div></pre></td></tr></table></figure></p>
+<h3 id="Show-and-Describe"><a href="#Show-and-Describe" class="headerlink" title="Show and Describe"></a>Show and Describe</h3><h4 id="show-databases-show-tablename-describe-tablename"><a href="#show-databases-show-tablename-describe-tablename" class="headerlink" title="show databases; show tablename; describe tablename;"></a><code>show databases;</code> <code>show tablename;</code> <code>describe tablename;</code></h4><h3 id="Column-data-type"><a href="#Column-data-type" class="headerlink" title="Column data type"></a>Column data type</h3><h4 id="Numeric-Types-：-Integral-Data-Types，Floating-Point-Data-Types"><a href="#Numeric-Types-：-Integral-Data-Types，Floating-Point-Data-Types" class="headerlink" title="Numeric Types ： Integral Data Types，Floating-Point Data Types"></a>Numeric Types ： Integral Data Types，Floating-Point Data Types</h4><h4 id="Date-and-Time-Types-：-Date-and-Time-Data-Types，TIMESTAMP-Display-Types"><a href="#Date-and-Time-Types-：-Date-and-Time-Data-Types，TIMESTAMP-Display-Types" class="headerlink" title="Date and Time Types ： Date and Time Data Types，TIMESTAMP Display Types"></a>Date and Time Types ： Date and Time Data Types，TIMESTAMP Display Types</h4><h4 id="String-Types-：-Regular-String-Types，TEXT-and-BLOB-Types"><a href="#String-Types-：-Regular-String-Types，TEXT-and-BLOB-Types" class="headerlink" title="String Types ： Regular String Types，TEXT and BLOB Types"></a>String Types ： Regular String Types，TEXT and BLOB Types</h4><h3 id="Insert"><a href="#Insert" class="headerlink" title="Insert"></a>Insert</h3><p>Example ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">INSERT [INTO] table [(column1, column2, column3,...)] VALUES</div><div class="line">(value1, value2, value3,...);</div></pre></td></tr></table></figure></p>
+<p>or<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">insert into customers values</div><div class="line">(NULL, &apos;Julie Smith&apos;, &apos;25 Oak Street&apos;, &apos;Airport West&apos;);</div><div class="line">```   </div><div class="line">### Select</div></pre></td></tr></table></figure></p>
+<p>SELECT [options] items<br>[INTO file_details]<br>FROM tables<br>[ WHERE conditions ]<br>[ GROUP BY group_type ]<br>[ HAVING where_definition ] –for group data<br>[ ORDER BY order_type ]<br>[LIMIT limit_criteria ]<br>[PROCEDURE proc_name(arguments)]<br>[lock_options]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#### Useful Comparison Operators for WHERE Clauses   </div><div class="line">Example :</div></pre></td></tr></table></figure></p>
 <p>=,&gt;,&lt;,!=<br>address is not null<br>address is null<br>amount between 0 and 60.00<br>city in (“Carlton”, “Moe”)<br>city not in (“Carlton”, ”Moe”)<br>name like (“Fred %”)<br>name not like (“Fred %”)<br>name regexp<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#### Retrieving Data from Multiple Tables   </div><div class="line">##### Simple Two-Table Joins</div><div class="line">Example ：</div></pre></td></tr></table></figure></p>
 <p>select orders.orderid, orders.amount, orders.date<br>from customers, orders<br>JOIN<br>where customers.name = ‘Julie Smith’<br>and customers.customerid = orders.customerid;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;* Comma between the names of the tables is equivalent to typing INNER JOIN or CROSS</div><div class="line"></div><div class="line">##### Joining More Than Two Tables</div><div class="line">Example ：</div></pre></td></tr></table></figure></p>
 <p>select customers.name<br>from customers, orders, order_items, books<br>where customers.customerid = orders.customerid<br>and orders.orderid = order_items.orderid<br>and order_items.isbn = books.isbn<br>and books.title like ‘%Java%’;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;* A total of join conditions one less than the total number of tables.   </div><div class="line"></div><div class="line">##### Finding Rows That Don’t Match : left join</div><div class="line"></div><div class="line">Example ：</div></pre></td></tr></table></figure></p>
@@ -224,22 +203,11 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/21/mysql-study-notes/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/04/09/mysql-study-notes/">展开全文 >></a>
         </p>
       
 
@@ -615,10 +583,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
             
             <div class="clearfix"></div>

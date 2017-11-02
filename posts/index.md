@@ -4,6 +4,7 @@
 #技术
 + [PHP pear](index.html?php-pear)
 + [markdown使用](index.html?use-cmd-markdown)
++ [another test](index.html?another-test)
 
 #生活
 

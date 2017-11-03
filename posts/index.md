@@ -1,7 +1,11 @@
 #技术
-+ [PHP pear](index.html?php-pear)
-+ [markdown使用](index.html?use-cmd-markdown)
+###PHP
++ [PHP pear](index.html?it/php/php-pear)
+###Python
 + [another test](index.html?another-test)
+###Style
++ [markdown使用](index.html?it/makeup/use-cmd-markdown)
+
 
 #生活
 

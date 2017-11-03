@@ -21,6 +21,7 @@ var post = window.location.search.substring(1);
 if(post=='')post='index';
 $('#text').html('loading...');
 $.get('posts/'+post+'.md',function(data){
+console.log(markdown.toHTML(data));
 	$('#text').html(markdown.toHTML(data));
 	var list=$('#nav');
 	$(list).append('<li role="presentation"><a href="' + edit_address+post+ '.md">Edit</a></li>');

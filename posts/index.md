@@ -1,9 +1,9 @@
 #技术
-###PHP
+##PHP
 + [PHP pear](index.html?it/php/php-pear)
-###Python
+##Python
 + [another test](index.html?another-test)
-###Style
+##Style
 + [markdown使用](index.html?it/makeup/use-cmd-markdown)
 
 

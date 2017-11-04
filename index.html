@@ -32,9 +32,9 @@ $.get('posts/'+post+'.md',function(data){
 	$("h1,h2").each(function() {
         $(this).prepend('<a name="' + $(this).text() + '"></a>');//给h1,h2加锚点
         if($(this)[0].tagName == "H1"){
-          $(list).append('<li role="presentation"><a href="#' + $(this).text() + '">' +  $(this).text() + '</a></li>');
+          $(list).append('<li role="presentation" style="font-size:18px;"><a href="#' + $(this).text() + '">' +  $(this).text() + '</a></li>');
         }else{
-          $(list).append('<li class="intent" role="presentation"><a href="#' + $(this).text() + '">' +  $(this).text() + '</a></li>');
+          $(list).append('<li class="intent" role="presentation" style="margin-left:10px;"><a href="#' + $(this).text() + '">' +  $(this).text() + '</a></li>');
         }
         
     });

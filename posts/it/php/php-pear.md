@@ -1,7 +1,7 @@
-## PHP pear，mdb2，mysql/mysqli driver install
+# PHP pear，mdb2，mysql/mysqli driver install
 
 
-Under CentOS7
+> Under CentOS7
 # install pear：
 ```
 $ wget http://pear.php.net/go-pear.phar

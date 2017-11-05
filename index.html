@@ -8,7 +8,7 @@
       <div class="col-md-9"><div id="text"></div></div>
 
       <div class="col-md-3">
-    	  <div class="hidden-print hidden-xs hidden-sm" style="position:fixed;top:20px;background:#eee">
+    	  <div class="hidden-print hidden-xs hidden-sm" style="position:fixed;top:0px;background:#eee">
     	     <ul id="nav" class="nav nav-pills nav-stacked" role="tablist" >
 		          <li role="presentation"><a href="index.html">Home</a></li>
 	         </ul>
@@ -29,9 +29,9 @@ $.get('posts/'+post+'.md',function(data){
 	$('#text').html(markdown.toHTML(data));
 	var list=$('#nav');
 	$(list).append('<li role="presentation"><a href="' + edit_address+post+ '.md">Edit</a></li>');
-	$("h1,h2").each(function() {
-        $(this).prepend('<a name="' + $(this).text() + '"></a>');//给h1,h2加锚点
-        if($(this)[0].tagName == "H1"){
+	$("h2,h3").each(function() {
+        $(this).prepend('<a name="' + $(this).text() + '"></a>');//给h2,h3加锚点
+        if($(this)[0].tagName == "H2"){
           $(list).append('<li role="presentation" style="font-size:18px;"><a href="#' + $(this).text() + '">' +  $(this).text() + '</a></li>');
         }else{
           $(list).append('<li class="intent" role="presentation" style="margin-left:10px;"><a href="#' + $(this).text() + '">' +  $(this).text() + '</a></li>');

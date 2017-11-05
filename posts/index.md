@@ -1,17 +1,23 @@
-#技术
-##PHP
+# Qin's Blog
+------
+> To Live To Learn,The more you read,the more you get
+## Program
+### PHP
 + [PHP pear](index.html?it/php/php-pear)
-##Python
+### Python
 + [another test](index.html?another-test)
-##Style
+## Style
 + [markdown使用](index.html?it/makeup/use-cmd-markdown)
 
 
-#生活
+## Life
+###  Reading
+### Diet
+### Other
 
-#英语
+## Demo
 
-#链接
+## Link
 
 - [Follow me on github](https://github.com/HubQin)
 - [新增文章](https://github.com/HubQin/hubqin.github.io/new/master/posts)

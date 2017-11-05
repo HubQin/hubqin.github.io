@@ -27,6 +27,7 @@ $('#text').html('loading...');
 $.get('posts/'+post+'.md',function(data){
 //console.log(markdown.toHTML(data));
 	$('#text').html(markdown.toHTML(data));
+  if(post == 'index'){$("h1").attr("style","color:#ea6f5a");}
 	var list=$('#nav');
 	$(list).append('<li role="presentation"><a href="' + edit_address+post+ '.md">Edit</a></li>');
 	$("h2,h3").each(function() {

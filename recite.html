@@ -1,6 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>	
 <body style="text-align: center;">
 	<h1 id="word"></h1>
@@ -13,9 +14,9 @@
 		function play_audio(word) {
 			play_url = base_url+word;
 			player = document.getElementById('audio');
+			player.src = "";
 			player.src = play_url;
 			player.play();
-			player.pause();
 		}
 		var i = 0;
 		$.get('recite/20171210words.json',function(data){

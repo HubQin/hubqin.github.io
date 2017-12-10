@@ -10,22 +10,18 @@
 	<audio id="audio" src=""></audio>
 	<script  src="js/zepto.min.js"></script>
 	<script type="text/javascript">
-		var base_url = 'http://tts.yeshj.com/s/';
-		function play_audio(word) {
-			play_url = base_url+word;
-			player = document.getElementById('audio');
-			player.src = "";
-			player.src = play_url;
-			player.play();
-		}
 		var i = 0;
+		var player = document.getElementById('audio');
+		var base_url = 'http://tts.yeshj.com/s/';
 		$.get('recite/20171210words.json',function(data){
 			setInterval(function(){
 				if (i < data.length) {
 					$("#word").text(data[i]['word']);
 					$("#sound").text(data[i]['sound']);
 					$("#meaning").text(data[i]['meaning']);
-					play_audio(data[i]['word']);
+					play_url = base_url + data[i]['word'];
+					player.src = play_url;
+					player.play();
 					i++;
 				}else{
 					i = 0;

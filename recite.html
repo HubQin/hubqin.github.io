@@ -7,13 +7,13 @@
 	<h1 id="word"></h1>
 	<p id="sound"></p>
 	<p id="meaning"></p>
+	<audio id="audio" src=""></audio>
 	<script  src="js/zepto.min.js"></script>
 	<script type="text/javascript">
 		var base_url = 'http://tts.yeshj.com/s/';
 		function play_audio(word) {
 			play_url = base_url+word;
-			player = document.createElement('audio');
-
+			player = document.getElementById('audio');
 			player.src = play_url;
 			player.play();
 		}

@@ -13,6 +13,7 @@
 	<script type="text/javascript">
 		var i = 0;
 		var base_url = 'http://tts.yeshj.com/s/';
+		$("#word").text("Loading...");
 		$.get('recite/20171210words.json',function(data){
 			setInterval(function(){
 				if (i < data.length) {

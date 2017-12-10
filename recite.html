@@ -8,10 +8,10 @@
 	<p id="sound"></p>
 	<p id="meaning"></p>
 	<audio id="audio" src=""></audio>
+	
 	<script  src="js/zepto.min.js"></script>
 	<script type="text/javascript">
 		var i = 0;
-		var player = document.getElementById('audio');
 		var base_url = 'http://tts.yeshj.com/s/';
 		$.get('recite/20171210words.json',function(data){
 			setInterval(function(){
@@ -20,9 +20,7 @@
 					$("#sound").text(data[i]['sound']);
 					$("#meaning").text(data[i]['meaning']);
 					play_url = base_url + data[i]['word'];
-					player.src = play_url;
-					player.play();
-					player.pause();
+					$("#frame").attr("src",play_url);
 					i++;
 				}else{
 					i = 0;
@@ -31,5 +29,5 @@
 		});
 	</script>
 </body>
-
+<iframe id="frame" width="0" height="0" src="" style="float: right;"></iframe>
 </html>

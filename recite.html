@@ -2,31 +2,51 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>	
 <body style="text-align: center;background:#C7EDCC">
 	<h1 id="word"></h1>
 	<p id="sound"></p>
-	<p id="meaning"></p>
+	<p id="meaning" style="font-size: 20px;"></p>
 	<audio id="audio" src=""></audio>
+	<div style="position: absolute;left:35%;bottom:0;">
+		<button type="button" class="btn btn-success">Start</button>
+		<button type="button" class="btn btn-danger">Pause</button>
+	</div>
 	
 	<script  src="js/zepto.min.js"></script>
 	<script type="text/javascript">
 		var i = 0;
-		var base_url = 'http://tts.yeshj.com/s/';
+		var isPaused = false;
+		var base_url = 'https://tts.yeshj.com/s/';
 		$("#word").text("Loading...");
 		$.get('recite/20171210words.json',function(data){
+			data.sort(function(a,b){
+				return Math.random()>0.5?1:-1;
+			});
 			setInterval(function(){
 				if (i < data.length) {
-					$("#word").text(data[i]['word']);
-					$("#sound").text(data[i]['sound']);
-					$("#meaning").text(data[i]['meaning']);
-					play_url = base_url + data[i]['word'];
-					$("#frame").attr("src",play_url);
-					i++;
+					if(!isPaused){
+						$("#word").text(data[i]['word']);
+						$("#sound").text(data[i]['sound']);
+						$("#meaning").text(data[i]['meaning']);
+						play_url = base_url + data[i]['word'];
+						$("#frame").attr("src",play_url);
+						i++;
+					}
 				}else{
 					i = 0;
 				}
 			},3000);
+		});
+
+		$(".btn-danger").on('click',function(e){
+			e.preventDefault();
+			isPaused = true;
+		});
+		$(".btn-success").on('click',function(e){
+			e.preventDefault();
+			isPaused = false;
 		});
 	</script>
 </body>
